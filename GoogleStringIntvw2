@@ -1,0 +1,67 @@
+import java.io.*;
+import java.util.*;
+import java.lang.Math.*;
+import java.lang.Iterable;
+
+/* Author: Anthony Noriega
+     Purpose: solve a sample Google interview problem
+     Description: this program concatenates string on a desirable way to build a sentence
+     
+*/
+
+
+public class Main {
+    
+    public static String Main(String[] words) {
+     StringBuffer sentence
+    = new StringBuffer();
+   
+    
+    for (String w : words) {
+        sentence.append(w);
+    }
+    return sentence.toString();
+    
+    }
+    public static String concat2(String[] words, String[] words2) {
+    StringBuffer sentence
+    = new StringBuffer();
+    
+    for (String w : words) {
+        sentence.append(w);
+    }
+        for (String w : words2) {
+        sentence.append(w);
+    }
+    return sentence.toString();
+    
+    }
+    
+    /*
+    public static String concatN(enum words) {
+    StringBuffer sentence
+    = new StringBuffer();
+    
+    for (for i=1; i<enum.size();i++) {
+       for (String w : words[i]) {
+           sentence.append(w);
+       }
+    }
+    
+    return sentence.toString();
+    
+    }
+    */
+    public static void main (String[] Args){
+        String[] words1 = {"Poetry ","for ","love "};
+        String[] words2 = {"Love ", "Poetry "};
+        String[] words3 = {"Haiku ", "of ","love "};
+        String w = Main(words1);
+        System.out.println(w);
+        String w2 = Main(words2);
+        System.out.println(w2);
+        String w3 = Main(words3);
+        System.out.println(w3);
+        return;
+    }
+}
